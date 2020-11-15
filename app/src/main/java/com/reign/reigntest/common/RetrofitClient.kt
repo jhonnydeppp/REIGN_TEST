@@ -1,6 +1,5 @@
 package com.reign.reigntest.common
 
-import com.google.gson.GsonBuilder
 import com.reign.reigntest.common.utils.Constants
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
