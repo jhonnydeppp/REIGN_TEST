@@ -2,7 +2,7 @@ package com.reign.reigntest.common.models
 
 import com.google.gson.annotations.SerializedName
 
-data class HitsItem(
+data class HitItem(
 
 	@field:SerializedName("comment_text")
 	val commentText: String? = null,

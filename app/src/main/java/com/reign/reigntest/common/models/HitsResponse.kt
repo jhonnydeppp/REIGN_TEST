@@ -2,10 +2,10 @@ package com.reign.reigntest.common.models
 
 import com.google.gson.annotations.SerializedName
 
-data class ArticlesResponse(
+data class HitsResponse(
 
 	@field:SerializedName("hits")
-	val hits: List<HitsItem?>? = null,
+	var hits: ArrayList<HitItem> ,
 
 	@field:SerializedName("hitsPerPage")
 	val hitsPerPage: Int? = null,
