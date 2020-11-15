@@ -10,9 +10,9 @@ import io.reactivex.schedulers.Schedulers
 
 
 class HitModel {
-    private val API = RetrofitClient.getClient().create(HitRestApi::class.java)
+    private val api = RetrofitClient.getClient().create(HitRestApi::class.java)
 
-    fun getHits() = API.getHits(Constants.QUERY_ANDROID).subscribeOn(
+    fun getHits() = api.getHits(Constants.QUERY_ANDROID).subscribeOn(
         Schedulers.io())
         .observeOn(AndroidSchedulers.mainThread())!!
 
