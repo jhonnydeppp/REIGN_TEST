@@ -10,5 +10,6 @@
     <string name="on_bad_request_error">"Bad request error caller: %s, code error: %s</string>
     <string name="on_server_error">"Server error caller: %s</string>
     <string name="info_error">"Server error cause: %s, message: %s</string>
+    <string name="separator">-</string>
 
 </resources>

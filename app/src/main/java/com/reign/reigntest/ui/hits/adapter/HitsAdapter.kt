@@ -1,7 +1,7 @@
 package com.reign.reigntest.ui.hits.adapter
 
 import android.content.Context
-import android.util.Log
+import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,6 +9,7 @@ import com.reign.reigntest.R
 import com.reign.reigntest.common.models.HitItem
 import com.reign.reigntest.databinding.HitItemBinding
 import com.reign.reigntest.ui.hits.HitInterface
+import java.text.SimpleDateFormat
 import java.util.*
 
 
@@ -25,7 +26,6 @@ class HitsAdapter(private val context: Context) : RecyclerView.Adapter<HitsAdapt
             listener.deleteElement(hitsList[position])
         }
         holder.mHitItemBinding.dragItem.setOnClickListener{
-            Log.i("--->", "onBindViewHolder: "+hitsList[position].url)
 
             hitsList[position].storyUrl?.let { storyUrl ->
                 listener.goToWeb(storyUrl)
@@ -33,6 +33,17 @@ class HitsAdapter(private val context: Context) : RecyclerView.Adapter<HitsAdapt
             if(hitsList[position].storyUrl.isNullOrEmpty())
                 listener.showMessage(context.getString(R.string.no_url_hit))
         }
+        hitsList[position].createdAt?.let {
+            val sdf = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+
+            val date = sdf.parse(it);
+            date?.let { simpleDate ->
+                //parse date to relative time string
+                val milliseconds = simpleDate.time
+                holder.mHitItemBinding.tvTime.text = DateUtils.getRelativeTimeSpanString(milliseconds)
+            }
+        }
+
     }
 
     override fun getItemCount()= hitsList.size

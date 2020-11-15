@@ -10,5 +10,6 @@
     <string name ="on_bad_request_error">Error de solicitud incorrecta endpoint: %s, codigo de error: %s</string>
     <string name ="on_server_error">Error de servidor endpoint: %s</string>
     <string name ="info_error">Error de servidor causa: %s, mensaje: %s</string>
+    <string name="separator">-</string>
 
 </resources>
