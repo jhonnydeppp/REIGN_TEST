@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">REIGN TEST</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name" translatable="false">REIGN TEST</string>
+    <string name="delete">Delete</string>
+    <string name="no_url_hit">This hit don´t have a link</string>
+
+    <!-- Endpoint message error -->
+    <string name="on_unknown_Error">Unknown error: %s, caller: %s</string>
+    <string name="on_timeout_error">"Timeout error caller: %s</string>
+    <string name="on_network_error">"Network error caller: %s</string>
+    <string name="on_bad_request_error">"Bad request error caller: %s, code error: %s</string>
+    <string name="on_server_error">"Server error caller: %s</string>
+    <string name="info_error">"Server error cause: %s, message: %s</string>
+
 </resources>

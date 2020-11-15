@@ -12,5 +12,5 @@ interface BaseErrorContract {
 
     fun onServerError(caller: String)
 
-    fun infoError(cause: Throwable?, msg: String?)
+    fun infoError(cause: Throwable?, message: String?)
 }

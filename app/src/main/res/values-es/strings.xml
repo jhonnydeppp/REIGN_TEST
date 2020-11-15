@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name ="delete">Eliminar</string>
+    <string name ="no_url_hit">Este hit no tiene un enlace</string>
+
+    <!-- mensaje de error de endpoint -->
+    <string name ="on_unknown_Error">Error desconocido: %s, endpoint: %s</string>
+    <string name ="on_timeout_error">Tiempo de espera excetido endpoint: %s</string>
+    <string name ="on_network_error">Error de red endpoint: %s</string>
+    <string name ="on_bad_request_error">Error de solicitud incorrecta endpoint: %s, codigo de error: %s</string>
+    <string name ="on_server_error">Error de servidor endpoint: %s</string>
+    <string name ="info_error">Error de servidor causa: %s, mensaje: %s</string>
+
+</resources>
